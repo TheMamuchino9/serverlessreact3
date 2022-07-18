@@ -1,38 +1,104 @@
-.App {
+
+
+body {
+
+background-repeat: no-repeat;
+margin:0;
+padding:0;
+font-family: sans-serif;
+background: black;
+background-attachment: fixed;
+}
+
+.login-box {
+z-index: 0;
+position: relative;
+top: 50%;
+left: 50%;
+width: 50%;
+padding: 40px;
+transform: translate(-50%, 50%);
+background: rgba(0,0,0,.5);
+box-sizing: border-box;
+box-shadow: 0 15px 25px rgba(0,0,0,.6);
+border-radius: 10px;
+}
+
+.login-box h2 {
+margin: 0 0 10px;
+position: relative;
+padding: 0;
+color: #fff;
+text-align: center;
+}
+
+.user-box{
+  position: relative;
+  margin-top: 5%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-box .user-box label {
+position: relative;
+text-align: center;
+top:10%;
+left: 0;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+pointer-events: none;
+transition: .5s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.button_cen
+{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.button_cen button {
+  background-color: transparent;
+  outline:none;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #1DA1F2;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
   }
+
+.login-box button:hover {
+cursor: pointer;
+background: #1DA1F2;
+color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 5px #03e9f4,
+            0 0 25px #03e9f4,
+            0 0 50px #03e9f4,
+            0 0 100px #03e9f4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form div {
+position: relative;
+float: left;
+width: 100%;
+margin-right: 1%;
+}
+
+.button_cen
+  {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
