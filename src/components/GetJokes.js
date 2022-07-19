@@ -27,7 +27,7 @@ function GetJokes() {
     const saveJoke = async() =>
     {
       const status = document.getElementById('favoriteButton').getAttribute("class");
-      if (status == 'nofavorite'){
+      if (status === 'nofavorite'){
         
         await supabase.from('jokes').insert([{ user: email, joke: message }])
         document.getElementById('favoriteButton').setAttribute("class", "favorite");
