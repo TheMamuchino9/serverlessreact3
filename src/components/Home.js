@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {useNavigate, useLocation} from 'react-router-dom';
 
 
@@ -20,6 +20,9 @@ function Home() {
       user: email,
   }});
   };
+  const navigateToLogIn = async() => {
+    navigate('/');
+  };
 
   
   
@@ -33,6 +36,9 @@ function Home() {
         </button>
         <button onClick={navigateToMyJokes} className="buttonx">
         My Jokes 
+        </button>
+        <button onClick={navigateToLogIn} className="buttonx">
+        Log Out 
         </button>
         </div>
     </div>
