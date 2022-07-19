@@ -42,9 +42,6 @@ function Login() {
 
   const navigate = useNavigate();
 
-  const navigateToMyJokes = () => {
-    navigate('/myjokes', { replace: true });
-  };
   const navigateToHome = (email) => {
     navigate('/home', {state: {
       user: email,
