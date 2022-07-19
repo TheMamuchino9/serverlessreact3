@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import React from "react";
+import {useNavigate} from 'react-router-dom';
 import { createClient } from '@supabase/supabase-js'
 
 function Login() {
