@@ -6,7 +6,7 @@ background-repeat: no-repeat;
 margin:0;
 padding:0;
 font-family: sans-serif;
-background: linear-gradient(#141e30, #243b55);
+background: black;
 background-attachment: fixed;
 }
 
@@ -20,7 +20,7 @@ left: 50%;
 width: 50%;
 padding: 40px;
 transform: translate(-50%, 10%);
-background: black;
+background: rgba(0,0,0,.5);
 box-sizing: border-box;
 box-shadow: 0 15px 25px rgba(0,0,0,.6);
 border-radius: 10px;
@@ -43,7 +43,7 @@ text-align: center;
 
 
 
-.login-box .user-box .labelx {
+.login-box .user-box label {
 max-height: fit-content;
 position: relative;
 text-align: justify;
@@ -55,21 +55,6 @@ color: white;
 pointer-events: none;
 transition: .5s;
 }
-
-
-
-.firstlabel {
-  max-height: fit-content;
-  position: absolute;
-  text-align: justify;
-  top:10%;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: white;
-  pointer-events: none;
-  transition: .5s;
-  }
 
 .login-box .user-boxerror label {
   
