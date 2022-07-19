@@ -58,17 +58,17 @@ function Login() {
     
       <div className="user-box">
       <input type="text" id="email" required placeholder="" autoComplete="off"></input>
-        <label>Email</label>
+        <label className="firstlabel">Email</label>
       </div>
       <div className="user-box">
       <input type="password" id="password" required  placeholder="" autoComplete="off"></input>
-        <label>Password</label>
+        <label className="firstlabel">Password</label>
       </div>
       <div className="user-boxerror">
       <label id="error">{error}</label>
       </div>
             <div className="button_cen">
-      <button onClick={query}>
+      <button className="buttonx" onClick={query}>
         Login 
         </button>
         </div>

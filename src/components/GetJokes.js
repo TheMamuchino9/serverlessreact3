@@ -22,7 +22,7 @@ function GetJokes() {
 
     useEffect(()=> {
       getJoke()
-    })
+    }, [])
 
     const saveJoke = async() =>
     {
@@ -62,7 +62,7 @@ function GetJokes() {
     <div className="login-box">
       <h2>New Jokes</h2>
       <div className="user-box">
-      <label>{message}</label>
+      <label className="labelx">{message}</label>
       </div>
       <div className="button_cen">
         

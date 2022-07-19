@@ -44,7 +44,7 @@ function MyJokes() {
     <div className="login-box">
       <h2>My jokes</h2>
       <div className="user-box">
-      <label id="jokes"></label>
+      <label id="jokes" className="labelx"></label>
       </div>
       <div className="button_cen">
         
