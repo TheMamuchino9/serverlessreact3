@@ -6,7 +6,7 @@ import { createClient } from '@supabase/supabase-js'
 function GetJokes() {
   const supabase = createClient('https://mdatzzubyplzikegdlms.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1kYXR6enVieXBsemlrZWdkbG1zIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTgxODgxNjEsImV4cCI6MTk3Mzc2NDE2MX0.DTyLzXMQhtA3PRMQr7hn2p-NkAoY1Fozba1f873TfQs');
   
-  const [message, setMessage] = useState('text')
+  const [message, setMessage] = useState('')
   const location = useLocation();
   var email = location.state.user
     const getJoke = async() =>

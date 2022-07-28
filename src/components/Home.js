@@ -20,6 +20,9 @@ function Home() {
       user: email,
   }});
   };
+  const navigateToLogIn = async() => {
+    navigate('/');
+  };
 
   
   
@@ -33,6 +36,9 @@ function Home() {
         </button>
         <button onClick={navigateToMyJokes} className="buttonx">
         My Jokes 
+        </button>
+        <button onClick={navigateToLogIn} className="buttonx">
+        Log Out 
         </button>
         </div>
     </div>
